@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blub ON - Off </title>
+</head>
+<body id = "b">
+    
+<style>
+    body{
+        background-color: black;
+    }
+    h2{
+        text-align:center;
+    }
+     img{
+        width: 170px;
+     }
+    .container{
+        align-items: center;
+        margin-left: 45%;
+        padding-bottom: 15px;
+    }
+    .btn{
+        margin-left: 42%;
+    }
+    button{
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 50px;
+        font-weight: bold;
+    }
+
+    button:hover{
+        border:solid 4px rgb(103, 179, 194);
+    }
+    .btn::selection{
+        background-color: white;
+        
+    }
+</style>
+
+   <h2>Bluf On-of</h2>
+
+   <div class="container">
+    <img src="assets/pic_bulboff.gif" alt="" id="img">
+    
+</div>
+<div class="btn">
+   <button id="bt" onclick=on()>ON </button>
+   <button id="bt" onclick=off()>OFF </button>
+
+</div>
+
+<script>
+    const img = document.getElementById("img")
+    const btn = document.getElementById("bt")
+    body = document.getElementById("b")
+     i = true
+    function on(){
+        img.src="assets/pic_bulbon.gif"  
+        b.style.backgroundColor="while"
+    }
+
+    function off(){
+        img.src="assets/pic_bulboff.gif"  
+        b.style.backgroundColor="black"
+    }
+</script>
+</body>
+</html>
